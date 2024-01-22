@@ -1,0 +1,13 @@
+.spinner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 12px;
+  .loading-font {
+    font-size: 14px;
+    letter-spacing: 1.01px;
+  }
+}

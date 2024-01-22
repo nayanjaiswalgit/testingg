@@ -1,0 +1,15 @@
+.three-dot-menu {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  place-content: center;
+  height: 32px;
+  width: 32px;
+  border-radius: 20px;
+
+  &:hover {
+    background-color: rgb(230, 230, 230);
+  }
+}

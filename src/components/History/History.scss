@@ -1,0 +1,21 @@
+.history-container {
+  padding: 0.70131rem 0.56106rem;
+  background: #fff;
+
+  .history-change-info {
+    overflow: hidden;
+    font-size: 14px;
+    padding-bottom: 6px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .history-change-detail {
+    padding-top: 6px;
+    color: #434343;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+}

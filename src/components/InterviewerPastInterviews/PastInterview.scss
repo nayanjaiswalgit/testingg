@@ -1,0 +1,71 @@
+.PastInterviewsWrapper {
+  height: 80vh;
+  width: inherit;
+  overflow-y: scroll;
+
+  .PastInterviewCard {
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    gap: 2rem;
+    justify-content: space-between;
+    min-height: 169px;
+    max-height: fit-content;
+    border-bottom: 0.5px solid #8f8f8f;
+    padding: 20px 14px;
+    gap: 2rem;
+
+    .InterviewDetails_CommnetBox {
+      h3 {
+        font-family: DM Sans;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        color: #6c6c6c;
+
+        span {
+          font-size: inherit;
+          font-weight: 500;
+          text-align: left;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        color: #a4a4a4;
+        margin: 12px 0px;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        gap: 2px;
+        span {
+          font-family: DM Sans;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+          letter-spacing: 0em;
+          color: #606060;
+          text-align: left;
+        }
+      }
+    }
+
+    .interviewTime_Feedback {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .interviewDateTimeBox {
+        p {
+          font-family: DM Sans;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

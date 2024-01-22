@@ -1,0 +1,54 @@
+.hptabscreen-main-container {
+  display: flex;
+  gap: 2rem;
+  padding: 2.5rem 0;
+
+  .hptabscreen-heading {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 0.5rem;
+  }
+  .hptabscreen-history-contain {
+    max-width: 21rem;
+    max-height: 19.75rem;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.84819rem;
+  }
+  .hptabscreen-comments-contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.84rem;
+  }
+  .hptabscreen-left-container {
+    background: #f6f6f6;
+    border-radius: 0.70131rem;
+    padding: 0.70131rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+  }
+  .post-comment {
+    display: flex;
+    width: 21rem;
+    height: 3.3125rem;
+    padding: 0.16963rem 0.67856rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 1.69638rem;
+    background: #fff;
+    margin-top: 0.85rem;
+    .post-comment-button {
+    }
+    .img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

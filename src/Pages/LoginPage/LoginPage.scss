@@ -1,0 +1,224 @@
+/* for login Page */
+.LoginPage-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/* for TitleContainer */
+.left_box_wrapper {
+  width: 50%;
+  height: 100%;
+  background-color: #f9f9fb;
+}
+.left_box {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  position: relative;
+  left: 20%;
+  flex-direction: column;
+}
+.left_box img {
+  height: 4.5rem;
+  width: 16rem;
+}
+/* for Login Container */
+.right_box_wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.right_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.LoginImage {
+  height: 26.15rem;
+}
+.login_btn {
+  display: flex;
+  width: 70%;
+  padding: 9px, 16px, 9px, 16px;
+  border-radius: 4px;
+  flex-direction: row;
+  justify-content: center;
+  height: 3.25rem;
+  align-items: center;
+  color: #757575;
+  background-color: #f9f9fb;
+  border: 1px solid #e7e8ee;
+  gap: 9px;
+  &:hover {
+    background-color: #eaeaf5;
+    cursor: pointer;
+  }
+}
+.rtitleBox {
+  display: none;
+}
+.login_btn span {
+  font-family: DM Sans;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+// utils
+.titleBox {
+  padding: 1rem 0rem;
+  margin: 1rem 0rem;
+}
+.company_title {
+  font-family: DM Sans;
+  font-size: 6rem;
+  font-weight: 700;
+  color: #001f3f;
+}
+.sub_head_desc {
+  font-family: DM Sans;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 2rem;
+  text-wrap: wrap;
+  max-width: 24rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #001f3f54;
+}
+
+/* media queries */
+@media only screen and (max-width: 1300px) {
+  .left_box {
+    height: 100%;
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    position: relative;
+    left: 13%;
+    flex-direction: column;
+  }
+  .company_title {
+    font-size: 5rem;
+  }
+  .LoginImage {
+    height: 20.15rem;
+  }
+  .left_box img {
+    height: 3.5rem;
+    width: 14rem;
+  }
+  .titleBox {
+    margin: 0;
+    padding: 0;
+  }
+  .sub_head_desc {
+    font-size: 20px;
+    line-height: 1.8rem;
+    margin: 0.6rem 0rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .login_btn {
+    width: 82%;
+    height: 3.05rem;
+    padding: 1rem;
+  }
+  .company_title {
+    font-size: 4.4rem;
+  }
+  .LoginImage {
+    height: 15.15rem;
+  }
+  .left_box img {
+    height: 3.2rem;
+    width: 12rem;
+  }
+  .titleBox {
+    margin: 0;
+    padding: 0;
+  }
+  .sub_head_desc {
+    max-width: 15rem;
+    font-size: 20px;
+    line-height: 1.8rem;
+    margin: 0.6rem 0rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  // Login container
+  .LoginPage-container {
+    // height: 100vh;
+    // width: 100%;
+    // display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9fb;
+  }
+  // left or top Box
+  .left_box_wrapper {
+    width: 100%;
+    height: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .company_title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .LoginImage {
+    height: 15.15rem;
+  }
+  .left_box {
+    left: 0;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+    width: auto;
+    max-width: fit-content;
+  }
+  .left_box img {
+    height: auto;
+    width: 190px;
+  }
+  .ltitleBox {
+    display: none;
+  }
+  .rtitleBox {
+    display: block;
+  }
+  .sub_head_desc {
+    font-size: 14px;
+    margin: 0.6rem 0rem;
+    text-align: center;
+    max-width: unset;
+  }
+  .right_box_wrapper {
+    width: 100%;
+    height: 80%;
+    justify-content: flex-start;
+  }
+  .login_btn {
+    width: 82%;
+    height: 3.05rem;
+    padding: 1rem;
+  }
+  .right_box {
+    margin: 2rem;
+  }
+  // util css
+  .titleBox {
+    margin: 1rem 0rem;
+    padding: 0;
+  }
+}

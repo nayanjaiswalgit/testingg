@@ -1,0 +1,39 @@
+.filter-button-normal,
+.filter-button-selected {
+  display: inline-flex;
+  padding: 0.375rem 1.25rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.9375rem;
+  border: none;
+  cursor: pointer;
+
+  &.filter-button-normal {
+    background: #ebebeb;
+
+    .filter-button-text {
+      display: inline;
+      color: #000;
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &:hover {
+      background: #d7d6d6;
+    }
+  }
+
+  &.filter-button-selected {
+    background: #26435c;
+
+    .filter-button-text {
+      color: #fff; /* Assuming white color for text when selected */
+    }
+
+    &:hover {
+      background: #314f6a;
+    }
+  }
+}

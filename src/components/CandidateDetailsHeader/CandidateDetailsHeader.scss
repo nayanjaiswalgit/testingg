@@ -1,0 +1,65 @@
+.cdh-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 16px 24px;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #e6e6e6;
+
+  .cdh-header-box {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 8px 28px;
+    max-height: 160px;
+    color: #696969;
+    font-weight: 500;
+    font-size: 18px;
+
+    .cdh-candidate-name {
+      color: #000;
+      font-size: 32px;
+      margin-bottom: 2px;
+    }
+  }
+
+  .cdh-avatar-container {
+    max-width: 116px;
+    height: 100px;
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  .cdh-details-container {
+    margin-left: 38px;
+  }
+
+  .cdh-detail-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  .cdh-label {
+    font-weight: bold;
+    margin-right: 14px;
+    margin-top: 5px;
+  }
+
+  .cdh-actions {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+
+    .cdh-download-resume,
+    .cdh-edit-profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 38px;
+    }
+  }
+}

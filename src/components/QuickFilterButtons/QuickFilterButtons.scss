@@ -1,0 +1,21 @@
+.quick-filter-container {
+  display: flex;
+  height: 2.8rem;
+  gap: 0.25rem;
+  overflow: hidden;
+  justify-content: start;
+  align-items: start;
+  padding: 0rem 1.25rem;
+
+  .applied-filter {
+    display: flex;
+    gap: 0.25rem;
+    overflow: auto;
+    justify-content: start;
+    align-items: start;
+    padding-bottom: 6px;
+    &::-webkit-scrollbar {
+      height: 4px;
+    }
+  }
+}

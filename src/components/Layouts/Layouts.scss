@@ -1,0 +1,17 @@
+.home-layout {
+  height: 100vh;
+
+  .main-section {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-setion::-webkit-scrollbar {
+    display: none;
+  }
+}

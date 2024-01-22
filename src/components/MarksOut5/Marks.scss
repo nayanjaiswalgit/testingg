@@ -1,0 +1,33 @@
+.marks-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+
+  .marks-unit {
+    display: block;
+    height: 10px;
+    width: 38px;
+    content: "";
+    background-color: #d9d9d9;
+  }
+
+  .bround-l {
+    border-radius: 10px 0 0 10px;
+  }
+  .bround-r {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .low {
+    background-color: #f86565;
+  }
+  .medium {
+    background-color: #ffc961;
+  }
+  .high {
+    background-color: #53c640;
+  }
+}

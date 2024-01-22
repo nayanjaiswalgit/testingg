@@ -1,0 +1,13 @@
+.application-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  align-items: flex-start;
+  grid-gap: 0.625rem;
+}
+.main-container {
+  width: 100%;
+}

@@ -1,0 +1,41 @@
+.ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters:checked {
+  .sort-icon-antd-container {
+    opacity: 0%;
+  }
+}
+
+.ant-table-wrapper .ant-table-thead th.ant-table-column-has-sorters:hover {
+  .sort-icon-antd-undefined {
+    display: inline-block; /* Show when parent is hovered */
+    opacity: 50%;
+    /* Up-to-down animation */
+    animation: bouncew 0.3s ease; /* Define your animation */
+  }
+}
+
+.sort-icon-antd-ascend {
+  opacity: 90%;
+  transform: rotate(0deg); /* Initial rotation angle */
+  transition: transform 1s ease; /* Use transition for smoother animation */
+}
+
+.sort-icon-antd-descend {
+  opacity: 90%;
+  transform: rotate(180deg); /* Initial rotation angle */
+  transition: transform 0.5s ease; /* Use transition for smoother animation */
+}
+
+/* Optional: To initially hide the .sort-icon-antd-undefined */
+.sort-icon-antd-undefined {
+  display: none;
+}
+@keyframes bouncew {
+  0% {
+    opacity: 0%;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 40%;
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,84 @@
+.team-form {
+  display: grid;
+  gap: 30px;
+
+  .error-message {
+    color: red;
+    padding: 2px 6px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  label {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+    padding-bottom: 6px;
+  }
+
+  input,
+  select,
+  textarea {
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    background: #fff;
+    padding: 9px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 180px;
+    resize: vertical;
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 9px 16px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M11.4531 0.857422L5.95313 7.14314L0.453125 0.857422" stroke="%23ADB5BD" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  ::placeholder {
+    color: #adb5bd;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      grid-template-columns: 1fr;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+    }
+
+    select {
+      background-position: right 8px center;
+    }
+  }
+}

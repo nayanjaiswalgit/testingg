@@ -1,0 +1,133 @@
+.ant-descriptions-item-content {
+  padding-bottom: 1.375rem;
+}
+
+.step-done-icon-container {
+  float: left;
+  margin-inline-end: 16px;
+}
+
+.step-done-icon {
+  background-color: #0f8513;
+  width: 27px;
+  height: 27px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-not-done-icon {
+  background-color: #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid #9ca3af;
+  float: left;
+  margin-inline-end: 16px;
+}
+
+.step-process-done-icon {
+  background-color: #ffffff;
+  width: 25px;
+  height: 25px;
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #e9e9e9;
+
+  border: 2px solid #0f8513;
+  float: left;
+  margin-inline-end: 16px;
+}
+
+.step-not-done-icon-inside {
+  width: 7.5px;
+  height: 7.5px;
+  background-color: #d1d5db;
+  border-radius: 3.125rem;
+}
+
+.step-process-done-icon-inside {
+  width: 7.5px;
+  height: 7.5px;
+  background-color: #0f8513;
+  border-radius: 3.125rem;
+}
+
+.ant-steps.ant-steps-vertical
+  > .ant-steps-item
+  > .ant-steps-item-container
+  > .ant-steps-item-tail {
+  position: absolute;
+  top: 0;
+  inset-inline-start: 13px;
+  width: 8px;
+  height: 100%;
+  padding: 28px 0 -2px;
+}
+
+.ant-steps.ant-steps-vertical.ant-steps-small
+  .ant-steps-item-container
+  .ant-steps-item-tail {
+  padding: 15px 0 0px;
+}
+
+.ant-steps
+  .ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title {
+  color: #000;
+
+  font-size: 0.975rem;
+
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 0.15rem;
+}
+
+.ant-steps.ant-steps-vertical.ant-steps-small
+  .ant-steps-item-container
+  .ant-steps-item-title {
+  color: #524f4f;
+
+  font-size: 0.975rem;
+
+  font-weight: 500;
+  line-height: normal;
+}
+
+:where(.css-dev-only-do-not-override-bj8l2f).ant-steps.ant-steps-vertical
+  > .ant-steps-item
+  .ant-steps-item-description {
+  color: #524f4f;
+
+  font-size: 0.75rem;
+
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ant-steps.ant-steps-vertical > .ant-steps-item {
+  min-height: 5rem;
+}
+
+.ant-steps
+  .ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
+  background-color: #0f8513;
+}
+
+.ant-steps.ant-steps-vertical
+  > .ant-steps-item
+  > .ant-steps-item-container
+  > .ant-steps-item-tail::after {
+  width: 2px;
+}

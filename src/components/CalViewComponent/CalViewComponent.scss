@@ -1,0 +1,268 @@
+.CalView-Component {
+  height: 80% !important;
+
+  .Calender-antd {
+    height: 74vh !important;
+    .ant-picker-calendar.ant-picker-calendar-full .ant-picker-calendar-date {
+      // min-height: 60.17px !important;
+      // min-width: 60.17px !important;
+    }
+  }
+}
+
+.ant-picker-calendar.ant-picker-calendar-full
+  .ant-picker-panel
+  .ant-picker-body
+  th {
+  font-family: DM Sans !important;
+  font-size: 20px;
+  font-weight: 700;
+  color: #a4a4a4 !important;
+}
+
+.ant-picker-calendar.ant-picker-calendar-full
+  .ant-picker-panel
+  .ant-picker-body
+  td {
+  text-align: center !important;
+  border: 1px solid #e9e9e9;
+  padding: 0px !important;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 400;
+  // color: #a4a4a4;
+}
+
+.ant-picker-calendar.ant-picker-calendar-full
+  .ant-picker-panel
+  .ant-picker-body
+  th,
+.ant-picker-calendar.ant-picker-calendar-full
+  .ant-picker-panel
+  .ant-picker-body
+  td {
+  text-align: center !important;
+  border: 1px solid #e9e9e9;
+  padding: 0px !important;
+
+  &:hover {
+    background-color: #f5f6f8;
+  }
+}
+
+.ant-picker-calendar.ant-picker-calendar-full .ant-picker-calendar-date {
+  display: flex !important;
+  // min-height: 105.17px !important;
+  // min-width: 105.17px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 0px;
+  padding: 0px;
+}
+.ant-picker-calendar.ant-picker-calendar-full
+  .ant-picker-cell-in-view.ant-picker-cell-selected
+  .ant-picker-calendar-date {
+  background-color: #f5f6f8;
+  z-index: 2 !important;
+  border: 3px solid #88b1ed !important;
+  border-radius: 10px;
+}
+
+.ant-picker-calendar.ant-picker-calendar-full
+  .ant-picker-calendar-date-content {
+  .events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute !important;
+    width: 20px;
+    height: 20px;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 50%;
+    background: #f99696;
+
+    span {
+      color: white;
+      font-family: DM Sans;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+}
+
+.ant-picker-content thead tr th {
+  // height: 80.17px !important;
+  height: 9vh !important;
+  // width: 105.17px !important;
+}
+
+.ant-picker-calendar.ant-picker-calendar-full .ant-picker-calendar-date {
+  border: 0px !important;
+}
+
+// hidding the data and month switcher
+.ant-picker-calendar
+  .ant-picker-calendar-header
+  .ant-picker-calendar-mode-switch {
+  margin-inline-start: 8px;
+  display: none !important;
+}
+
+// Custom Header Css
+.customCalHeader {
+  display: flex;
+  height: 12.3% !important;
+  // height: 76px !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px !important;
+  background-color: #f6f6f6 !important;
+}
+
+// calbody css
+.ant-picker-calendar .ant-picker-panel .ant-picker-body {
+  padding: 0px;
+}
+
+.ant-picker-calendar .ant-picker-cell .ant-picker-cell-inner,
+.ant-picker-calendar .ant-picker-cell .ant-picker-cell-inner {
+  // height: 80px !important;
+  height: 9vh !important;
+}
+
+// h4
+.ant-typography {
+  margin: 0 !important;
+  font-family: DM Sans;
+
+  font-size: 20px;
+  display: flex;
+  gap: 1rem;
+  font-weight: 500;
+  color: #a4a4a4 !important;
+
+  span {
+    font-weight: 500;
+    font-family: DM Sans;
+    font-size: 20px;
+    color: #a4a4a4;
+  }
+}
+
+// media query
+@media only screen and (max-width: 1076px) {
+  .Calender-antd {
+    // width: 60% !important;
+    // min-width: 600px !important;
+  }
+  .ant-picker-content thead tr th {
+    // height: 80.17px !important;
+    // width: 80.17px !important;
+  }
+  .ant-picker-calendar .ant-picker-cell .ant-picker-cell-inner,
+  .ant-picker-calendar .ant-picker-cell .ant-picker-cell-inner {
+    // height: 80.17px !important;
+  }
+
+  .ant-picker-calendar.ant-picker-calendar-full .ant-picker-calendar-date {
+    // min-height: 80.17px !important;
+    // min-width: 80.17px !important;
+  }
+  .ant-picker-calendar.ant-picker-calendar-full
+    .ant-picker-cell-in-view.ant-picker-cell-selected
+    .ant-picker-calendar-date {
+    // min-height: 80.17px !important;
+    // min-width: 80.17px !important;
+  }
+
+  .ant-picker-calendar.ant-picker-calendar-full
+    .ant-picker-calendar-date-content {
+    .events {
+      height: 20px;
+      width: 20px;
+      overflow: hidden;
+      span {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .ant-picker-content thead tr th {
+    // height: 60.17px !important;
+    // width: 60.17px !important;
+  }
+
+  .ant-picker-calendar.ant-picker-calendar-full .ant-picker-calendar-date {
+    // min-height: 60.17px !important;
+    // min-width: 60.17px !important;
+  }
+
+  .ant-picker-calendar .ant-picker-cell .ant-picker-cell-inner,
+  .ant-picker-calendar .ant-picker-cell .ant-picker-cell-inner {
+    // height: 60.17px !important;
+  }
+
+  // selected cell
+  .ant-picker-calendar.ant-picker-calendar-full
+    .ant-picker-cell-in-view.ant-picker-cell-selected
+    .ant-picker-calendar-date {
+    // min-height: 60.17px !important;
+    // min-width: 60.17px !important;
+    // z-index: 4;
+  }
+
+  .ant-picker-calendar.ant-picker-calendar-full
+    .ant-picker-calendar-date-content {
+    .events {
+      height: 18px;
+      width: 18px;
+      right: 8%;
+      bottom: 8%;
+      span {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+//
+@media only screen and (max-width: 560px) {
+  .ant-picker-calendar.ant-picker-calendar-full .ant-picker-calendar-date {
+    // min-height: 60.17px !important;
+    // min-width: 60.17px !important;
+    height: 60px !important;
+  }
+  .ant-picker-calendar.ant-picker-calendar-full
+    .ant-picker-calendar-date-content {
+    .events {
+      height: 16px;
+      width: 16px;
+      right: 5%;
+      bottom: 5%;
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+// modifying default class
+.ant-picker-calendar.ant-picker-calendar-full .ant-picker-calendar-date-value {
+  font-size: 1.1rem !important;
+}
+
+.ant-picker-calendar .ant-picker-content th,
+.ant-picker-calendar .ant-picker-content td {
+  color: rgb(0 0 0 / 48%) !important;
+}
+
+.ant-select-dropdown .ant-select-item-option-selected {
+  background-color: #2b8ec9 !important;
+  color: #003266 !important;
+}

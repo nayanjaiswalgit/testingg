@@ -1,0 +1,127 @@
+.CalEventContainer {
+  width: 100%;
+  min-height: 59px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+
+  .CalEvent-Title_link_Box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+
+    .CalEvent-Title {
+      left: 5px;
+      position: relative;
+      width: 70%;
+      p {
+        font-family: DM Sans !important;
+        font-size: 14px;
+        width: 100%;
+        font-weight: 500;
+        position: relative;
+        left: 6px;
+        text-align: left;
+        color: #003266 !important;
+      }
+    }
+    .CalEvent-linksBox {
+      display: flex;
+      top: 1px;
+      width: 20%;
+      flex-direction: row;
+      right: 10px;
+      gap: 14px;
+
+      .CalEvent-meetlink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        .linkHover-Wrapper {
+          position: absolute;
+          right: -50px;
+          top: 20px;
+          z-index: 200;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .CalEvent-TimeAndAvatarBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+
+    .CalEvent-MeetTimingContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      width: 80%;
+      align-items: center;
+
+      .CalEvent-Timing {
+        display: flex;
+        gap: 5px;
+        margin-left: 7px;
+        p {
+          font-size: 10px;
+          font: DM Sans;
+          font-weight: 400px;
+          color: #a4a4a4;
+        }
+      }
+    }
+
+    .CalEvent-AvatarBox {
+      display: flex;
+      flex-direction: row;
+      margin-right: 0.3rem;
+      position: relative;
+      justify-content: right;
+      align-items: center;
+      height: 50%;
+      .profileList-wrapper {
+        position: absolute;
+        right: 10%;
+        top: -2%;
+        background-color: white;
+        width: max-content;
+        border: 0.5px solid #d7d7d7;
+        border-radius: 5px;
+        box-shadow: 0 1px 2px 0;
+        z-index: 200;
+      }
+      .CalEventAvatar {
+        height: 16px;
+        width: 16px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fdaf67;
+
+        span {
+          font-size: 11px;
+          font-family: DM Sans;
+          font-weight: 400;
+          text-align: center;
+          color: white;
+        }
+      }
+      .allowOverlap {
+        position: relative;
+        left: -10%;
+        background-color: violet;
+      }
+    }
+  }
+}

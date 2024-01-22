@@ -1,0 +1,56 @@
+.interview-PersonListBox {
+  background-color: white;
+  .Interview-GroupHeading {
+    font-family: DM Sans;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+  }
+  .Inrerview-PersonListEncloser {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.4rem;
+
+    &:hover {
+      background-color: #efefef;
+    }
+
+    .PersonListBlock {
+      display: flex;
+      flex-direction: row;
+      gap: 9px;
+      cursor: pointer;
+      margin: 6px 0;
+
+      .PersonListAvatar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        span {
+          color: white;
+          font-family: DM Sans;
+          font-size: 12px;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+
+      .PersonListNameBox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        span {
+          font-family: DM Sans;
+          font-size: 11px;
+          color: #a4a4a4;
+          font-weight: 700;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
